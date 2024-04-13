@@ -27,18 +27,20 @@ const {
   ONLY_IN_CONFIG,
   ONLY_IN_FOLDER,
   COMMENT,
-  ONLY_IN_STUFF
+  ONLY_IN_STUFF,
+  DEBUG
 } = process.env
 
-console.log({ 
+console.log(JSON.stringify({ 
   WONT_CHANGE,
   WONT_BE_OVERWRITTEN,
   ONLY_IN_ENV,
   ONLY_IN_CONFIG,
   ONLY_IN_FOLDER,
   COMMENT,
-  ONLY_IN_STUFF
-});
+  ONLY_IN_STUFF,
+  DEBUG
+}, null, "  "));
 
 
 console.log("envStore:", envStore);
